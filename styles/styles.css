@@ -1,9 +1,15 @@
 /*#363635 dk brown
-737170 lt gray
-#d9d9d1 lt
-#fffff white
 #f84d3a salmon
 rgb(248, 77, 58)
+
+#989898	rgb(152,152,152) dark gray
+#11d4d4  rgb(23, 207, 207)  aqua
+#b3ffff
+
+#e1d8d0  rgb(225, 216, 208)
+#f2f2f2	 rgb(242, 242, 242)
+#4d4d4d	 rgb(77, 77, 77)
+/*#d9d9d9 */
 
 
 /* Layout */
@@ -17,7 +23,7 @@ body {
   z-index: 1;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: #363635;
+  background-color: #f2f2f2;
   font-size: 16px;
 }
 /*.clr:after {
@@ -27,11 +33,13 @@ body {
 }*/
 #heading-work  {
 		font-family: 'Gruppo', cursive;
-		color: #d9d9d1;
-		font-size: 65px;
-		letter-spacing: 3px;
+		color: #7fcdcd;
+		font-size: 55px;
+		letter-spacing: 2px;
 		z-index: 3;
-		margin: 0 auto;
+		position: absolute;
+		right: 17%;
+		top: 72%;
 }
 
 #item0, #item1, #item2, #item3, #item4, #item5, #item6, #item7, #item8, #item9, #item10, #item11, #item12, #item13, #item14, #item15 {
@@ -145,7 +153,7 @@ body {
   height: 100%;
   width: 50%;
   overflow: auto;
-  background: #737170;
+  background: #e1d8d0;
 	color: #d9d9d1;
 }
 #item2 h2 {
@@ -174,22 +182,24 @@ body {
   -ms-transition: all 0.3s linear 0s;
   -webkit-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
-  background: #f84d3a;
-	opacity: .5;
+  background: #11d4d4;
+	color: #e1d8d0;
 }
 
 .button:hover {
-  background: rgba(248, 77, 58, 0.3);
+	opacity: .3;
+
 }
 #item2 .button p {
 	font-family: 'Gruppo', cursive;
-	font-size: 16px;
+	font-size: 20px;
 	color: #d9d9d1;
 	letter-spacing: 2px;
 }
 
 
 /* Hexagonal Grid */
+
 
 #grid {
   width: 70%;
@@ -235,8 +245,8 @@ body {
   -ms-transform: skewY(-30deg) rotate(60deg);
   transform: skewY(-30deg) rotate(60deg);
   overflow: hidden;
-  background: #f84d3a;
-	opacity: .5;
+  background: #11d4d4	;
+	/*opacity: .5;*/
 }
 #grid li:nth-child(3n+2) {
   margin: 0 1%;
@@ -304,10 +314,10 @@ body {
 
 
  .name {
-	margin: -25px auto;
+	margin: 7px auto;
 	font-family: 'Gruppo', cursive;
-	color: #f84d3a;
-	opacity: .5;
+	color: #11d4d4;
+	/*opacity: .5;*/
 	font-size: 90px;
 	text-align: center;
 	/*letter-spacing: 1px;*/
@@ -323,44 +333,71 @@ body {
   padding: 0 10px;
   font-size: 1em;
 }
-#nav-links {
-	font-family: 'Gruppo', cursive;
-	font-size: 50px;
-	margin: 10% auto;
-	text-align: center;
+#navlinks {
+  overflow: hidden;
+  background-color: #d9d9d9;
 }
-#nav-links a {
-	color: #f84d3a;
-	opacity: .5;
+#navlinks a {
+  float: left;
+  display: block;
+  color: #11d4d4;;
+  text-align: center;
+  padding-left: 14px;
+	padding-right: 35px;
+  text-decoration: none;
+}
+
+#navlinks {
+	font-family: 'Gruppo', cursive;
+	font-size: 24px;
+
+}
+.content {
+  padding: 26px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/*#navlinks ul  {
 	text-decoration: none;
+	list-style-type: none !important;
+}
+#navlinks a {
+	color: #11d4d4;
+	/*opacity: .5;*/
+	/*text-decoration: none;
 	display: block;
 	line-height: 40px;
+	list-style-type: none;
+}*/
+#navlinks a:hover {
+	color: #11d4d4;
+	opacity: 0.4
 }
-#nav-links a:hover {
-	color: #f84d3a;
-	opacity: 0.2
-}
-#nav-links #right {
-	font-size: 70px;
-	letter-spacing: 4px;
-	padding-bottom: 2px;
-}
-#nav-links #left {
-	font-size: 60px;
+
+/*#navlinks #left {
+	font-size: 30px;
 	letter-spacing: 3.8px;
 
 }
-#nav-links #hello {
-	font-size: 57px;
+#navlinks #hello {
+	font-size: 26px;
 	letter-spacing: 3.8px;
 	line-height: 37px;
 	word-spacing: 1px;
-}
-#nav-links #about {
-	font-size: 55px;
-	letter-spacing: 3.3px;
 
 }
+#navlinks #about {
+	font-size: 24px;
+	letter-spacing: 3.3px;
+
+}*/
 
 /*********************************/
 #page2 {
@@ -368,13 +405,13 @@ body {
   /*z-index: -1;
   overflow-x: hidden;
   overflow-y: auto;*/
-  background-color: #d9d9d1;
-	opacity: .5;
+  background-color: #989898;
+	/*opacity: .5;*/
   font-size: 16px;
 }
 #heading-about {
 	font-family: 'Gruppo', cursive;
-	color: #363635;
+	color: #008080;
 	font-size: 65px;
 	letter-spacing: 3px;
 	text-align: center;
@@ -423,7 +460,7 @@ body {
     text-align: center;
     color: white;
 }
-.top-left {
+/*.top-left {
 	position: absolute;
 	top: 8px;
 	left: 16px;
@@ -441,10 +478,10 @@ body {
 	  line-height: 150%;
 		z-index: 3;
 		overflow: hidden;
-}
+}*/
 #portrait {
 	opacity: .5;
-	border: #f84d3a solid 3px;
+	border: #7fcdcd solid 3px;
 	z-index: 2;
 	margin: 0 auto;
 }
