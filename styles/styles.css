@@ -1,20 +1,19 @@
-/*#363635 dk brown
-#f84d3a salmon
-rgb(248, 77, 58)
-
-#989898	rgb(152,152,152) dark gray
-#11d4d4  rgb(23, 207, 207)  aqua
-#b3ffff
-
 #e1d8d0  rgb(225, 216, 208)
 #f2f2f2	 rgb(242, 242, 242)
 #4d4d4d	 rgb(77, 77, 77)
 /*#d9d9d9 */
 
+#f0f0f5
+#4d004d
+#a3a3c2
+
+
 
 /* Layout */
 #page1 {
 	height: 1000px;
+	border: #d5ced5 solid 4px;
+
 }
 body {
 	position: absolute;
@@ -23,23 +22,19 @@ body {
   z-index: 1;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: #f2f2f2;
+  background-color: #d5ced;
+	border: ##d5ced solid 4px;
   font-size: 16px;
 }
-/*.clr:after {
-  content: "";
-  display: block;
-  clear: both;
-}*/
 #heading-work  {
 		font-family: 'Gruppo', cursive;
-		color: #7fcdcd;
-		font-size: 55px;
+		color: #4d004d;
+		font-size: 75px;
 		letter-spacing: 2px;
 		z-index: 3;
 		position: absolute;
-		right: 17%;
-		top: 72%;
+		right: 27%;
+		top: 37%;
 }
 
 #item0, #item1, #item2, #item3, #item4, #item5, #item6, #item7, #item8, #item9, #item10, #item11, #item12, #item13, #item14, #item15 {
@@ -245,8 +240,22 @@ body {
   -ms-transform: skewY(-30deg) rotate(60deg);
   transform: skewY(-30deg) rotate(60deg);
   overflow: hidden;
-  background: #11d4d4	;
+  background: #474447;
 	/*opacity: .5;*/
+}
+#grid li .hexagon-purple {
+	position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -o-transform: skewY(-30deg) rotate(60deg);
+  -moz-transform: skewY(-30deg) rotate(60deg);
+  -webkit-transform: skewY(-30deg) rotate(60deg);
+  -ms-transform: skewY(-30deg) rotate(60deg);
+  transform: skewY(-30deg) rotate(60deg);
+  overflow: hidden;
+	background: #4d004d;
 }
 #grid li:nth-child(3n+2) {
   margin: 0 1%;
@@ -269,7 +278,7 @@ body {
   margin-left: 0.5%;
 }
 
-#grid li .hexagon img {
+#grid li .hexagon-purple img {
   left:-100%;
   right:-100%;
   height:100%;
@@ -282,7 +291,7 @@ body {
   transition: all 0.6s linear 0s;
 }
 
-#grid li:hover img {
+#grid li:hover .hexagon-purple img {
   height: 150%;
   -o-transform: translateZ(0) translateX(-25%);
   -moz-transform: translateZ(0) translateX(-25%);
@@ -291,13 +300,13 @@ body {
   transform: translateZ(0) translateX(-25%);
 }
 
-#grid li .hexagon .overlay {
+#grid li .hexagon-purple .overlay {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(255,255,255,0);
+  background: rgb(77,0,77);
 }
 
 #grid li:hover .overlay {
@@ -306,7 +315,7 @@ body {
   -ms-transition: all 0.6s linear 0s;
   -webkit-transition: all 0.6s linear 0s;
   transition: all 0.6s linear 0s;
-	background: rgba(255,255,255,0.3);
+	background: rgba(77,0,77,0);
 }
 
 /**********************************/
@@ -316,11 +325,9 @@ body {
  .name {
 	margin: 7px auto;
 	font-family: 'Gruppo', cursive;
-	color: #11d4d4;
-	/*opacity: .5;*/
+	color: #4d004d;
 	font-size: 90px;
 	text-align: center;
-	/*letter-spacing: 1px;*/
 }
 .left h2 {
   font-family: 'Gruppo', cursive;
@@ -335,21 +342,18 @@ body {
 }
 #navlinks {
   overflow: hidden;
-  background-color: #d9d9d9;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 24px;
+  background-color: #474447;
 }
 #navlinks a {
-  float: left;
-  display: block;
-  color: #11d4d4;;
+  display: inline;
+  color: #f0f0f5;
   text-align: center;
   padding-left: 14px;
-	padding-right: 35px;
   text-decoration: none;
-}
-
-#navlinks {
-	font-family: 'Gruppo', cursive;
-	font-size: 24px;
+	margin-left: 200px;
 
 }
 .content {
@@ -363,41 +367,19 @@ body {
 .sticky + .content {
   padding-top: 60px;
 }
-
-/*#navlinks ul  {
-	text-decoration: none;
-	list-style-type: none !important;
-}
-#navlinks a {
-	color: #11d4d4;
-	/*opacity: .5;*/
-	/*text-decoration: none;
-	display: block;
-	line-height: 40px;
-	list-style-type: none;
-}*/
 #navlinks a:hover {
-	color: #11d4d4;
+	color: #f0f0f5;
 	opacity: 0.4
 }
 
-/*#navlinks #left {
-	font-size: 30px;
-	letter-spacing: 3.8px;
-
-}
-#navlinks #hello {
-	font-size: 26px;
-	letter-spacing: 3.8px;
-	line-height: 37px;
-	word-spacing: 1px;
-
-}
-#navlinks #about {
-	font-size: 24px;
-	letter-spacing: 3.3px;
-
-}*/
+/*#f0f0f5
+#4d004d
+#a3a3c
+#4d004d
+#4C453B
+#b2b2b2
+#ede5ed
+#8e898e  */
 
 /*********************************/
 #page2 {
@@ -405,25 +387,34 @@ body {
   /*z-index: -1;
   overflow-x: hidden;
   overflow-y: auto;*/
-  background-color: #989898;
-	/*opacity: .5;*/
+  background-color: #a5a0a5;
   font-size: 16px;
 }
 #heading-about {
 	font-family: 'Gruppo', cursive;
-	color: #008080;
+	color: c;
 	font-size: 65px;
 	letter-spacing: 3px;
 	text-align: center;
 	z-index: 2;
 }
-/*.photo img {
-	width: 400px;
-	height: 400px;
-	float:left;
-	margin-left: 100px;
-	z-index: 2;
+/*#color-hex {
+	background-color: #4d004d;
+	float: left;
+
+}*/
+#color-hex {
+  position: relative;
+  width: 200px;
+  height: 115.47px;
+  margin: 57.74px 0;
+	background-color: #4d004d;
+  background-size: auto 224.0119px;
+  background-position: left;
+  border-left: solid 4px #d9d9d1;
+  border-right: solid 5px #d9d9d1;
 }
+
 #about-me {
 	height:500px;
   width: 500px;
@@ -460,28 +451,10 @@ body {
     text-align: center;
     color: white;
 }
-/*.top-left {
-	position: absolute;
-	top: 8px;
-	left: 16px;
-	white-space: nowrap;
-    overflow: hidden;
-    max-width: 500px;
-    border-left:1em solid transparent;
-    border-right:1em solid transparent;
-    text-overflow: hidden;
-		font-family: 'Raleway', sans-serif;
-		font-weight: 500;
-		color: #363635;
-	  font-size: 18px;
-	  text-align: left;
-	  line-height: 150%;
-		z-index: 3;
-		overflow: hidden;
-}*/
+
 #portrait {
 	opacity: .5;
-	border: #7fcdcd solid 3px;
+	border: #4d004d solid 3px;
 	z-index: 2;
 	margin: 0 auto;
 }
@@ -489,12 +462,12 @@ body {
 page3
 **************************/
 #page3 {
-	background: #363635;
-	height: 1000px;
+	background: ##f0f0f5;
+	height: 500px;
 }
 #heading-contact {
 	font-family: 'Gruppo', cursive;
-	color: #d9d9d1;
+	color: #4d004d;
 	font-size: 65px;
 	letter-spacing: 3px;
 	z-index: 3;
@@ -502,9 +475,10 @@ page3
 	text-align: center;
 }
 h2.contact-info {
-	font-family: 'Gruppo', cursive;
-	font-size: 22px;
-	color: #d9d9d1;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 25px;
+	color: #4d004d;
 	text-align: center;
 }
 .contact-links a {
@@ -513,12 +487,12 @@ h2.contact-info {
 	line-height: 20px;
 	font-family: 'Gruppo', cursive;
 	font-size: 18px;
-	color: rgb(248, 77, 58);
+	color: rgb(77,0,77);
 	text-decoration: none;
 	z-index: 3;
 }
 a.contact-links:hover {
-	color: rgba(248, 77, 58, .4);
+	color: rgba(77,0,77,.5);
 }
 
 
