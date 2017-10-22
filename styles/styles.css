@@ -23,7 +23,7 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   background-color: #d5ced;
-	border: ##d5ced solid 4px;
+	border: ##d5ced5 solid 4px;
   font-size: 16px;
 }
 #heading-work  {
@@ -35,6 +35,16 @@ body {
 		position: absolute;
 		right: 27%;
 		top: 37%;
+}
+#work-h2 {
+	color: #474447;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	display:block;
+	line-height:125%;
+	width: 30%;
+	height:auto;
 }
 
 #item0, #item1, #item2, #item3, #item4, #item5, #item6, #item7, #item8, #item9, #item10, #item11, #item12, #item13, #item14, #item15 {
@@ -148,8 +158,8 @@ body {
   height: 100%;
   width: 50%;
   overflow: auto;
-  background: #e1d8d0;
-	color: #d9d9d1;
+  background: #d5ced5;
+	color: #d5ced5;
 }
 #item2 h2 {
 	letter-spacing: 2px;
@@ -161,8 +171,10 @@ body {
 }
 
 .right img {
-  height: auto;
-  width: 120%;
+  height: 75%;
+  width: 90%;
+	margin-top: 20px;
+	border: #4d004d solid 2px;
 }
 
 .button {
@@ -177,8 +189,8 @@ body {
   -ms-transition: all 0.3s linear 0s;
   -webkit-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
-  background: #11d4d4;
-	color: #e1d8d0;
+  background: #4d004d;
+	color: #d5ced5;
 }
 
 .button:hover {
@@ -188,7 +200,7 @@ body {
 #item2 .button p {
 	font-family: 'Gruppo', cursive;
 	font-size: 20px;
-	color: #d9d9d1;
+	color: #d5ced5;
 	letter-spacing: 2px;
 }
 
@@ -330,28 +342,33 @@ body {
 	text-align: center;
 }
 .left h2 {
-  font-family: 'Gruppo', cursive;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 26px;
+	color: #4d004d;
+
 }
 
 .left p {
   font-family: 'Gruppo', cursive;
   padding: 0 10px;
-  font-size: 1em;
+  font-size: 18px;
+	margin: auto 8px;
+	color: #4d004d;
 }
 #navlinks {
   overflow: hidden;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
-	font-size: 24px;
+	font-size: 20px;
   background-color: #474447;
 }
 #navlinks a {
   display: inline;
   color: #f0f0f5;
   text-align: center;
-  padding-left: 14px;
+  padding-left: 28px;
   text-decoration: none;
 	margin-left: 200px;
 
@@ -368,8 +385,8 @@ body {
   padding-top: 60px;
 }
 #navlinks a:hover {
-	color: #f0f0f5;
-	opacity: 0.4
+	color: #a5a0a5;
+	opacity: 0.4;
 }
 
 /*#f0f0f5
@@ -390,19 +407,15 @@ body {
   background-color: #a5a0a5;
   font-size: 16px;
 }
-#heading-about {
+.heading-about {
 	font-family: 'Gruppo', cursive;
-	color: c;
+	color: #4d004d;
 	font-size: 65px;
 	letter-spacing: 3px;
 	text-align: center;
 	z-index: 2;
 }
-/*#color-hex {
-	background-color: #4d004d;
-	float: left;
 
-}*/
 #color-hex {
   position: relative;
   width: 200px;
@@ -465,7 +478,7 @@ page3
 	background: ##f0f0f5;
 	height: 500px;
 }
-#heading-contact {
+.heading-contact {
 	font-family: 'Gruppo', cursive;
 	color: #4d004d;
 	font-size: 65px;
@@ -486,7 +499,7 @@ h2.contact-info {
 	display: block;
 	line-height: 20px;
 	font-family: 'Gruppo', cursive;
-	font-size: 18px;
+	font-size: 22px;
 	color: rgb(77,0,77);
 	text-decoration: none;
 	z-index: 3;
