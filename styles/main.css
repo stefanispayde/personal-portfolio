@@ -1,0 +1,389 @@
+
+/* Layout */
+#page1 {
+	height: 750px;
+}
+body {
+	position: absolute;
+  height: 100%;
+  width: 100%;
+  /*z-index: -1;*/
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #A19996;
+	border: #A19996 solid 6px;
+  font-size: 16px;
+}
+#heading-work  {
+		font-family: 'Gruppo', cursive;
+		color: #300F24;
+		font-size: 75px;
+		letter-spacing: 2px;
+		position: absolute;
+		right: 55%;
+		top: 47%;
+}
+.clr:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#item0, #item1, #item2, #item3, #item4, #item5, #item6, #item7, #item8, #item9, #item10, #item11, #item12, #item13, #item14, #item15 {
+  overflow: hidden;
+  z-index: 999;
+  display: block;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 0;
+  width: 100%;
+  background: #FFFFFF;
+  -o-transition: transform 0.6s linear 0s, height 0s linear 0.6s;
+  -moz-transition: transform 0.6s linear 0s, height 0s linear 0.6s;
+  -ms-transition: transform 0.6s linear 0s, height 0s linear 0.6s;
+  -webkit-transition: transform 0.6s linear 0s, height 0s linear 0.6s;
+  transition: transform 0.6s linear 0s, height 0s linear 0.6s;
+}
+
+#item0:target, #item1:target, #item2:target, #item3:target, #item4:target, #item5:target, #item6:target, #item7:target, #item8:target,
+#item9:target, #item10:target, #item11:target, #item12:target, #item13:target, #item14:target, #item15:target {
+  height: 100%;
+  overflow: auto;
+  -o-transition: transform 0.6s linear 0s, height 0s linear 0s;
+  -moz-transition: transform 0.6s linear 0s, height 0s linear 0s;
+  -ms-transition: transform 0.6s linear 0s, height 0s linear 0s;
+  -webkit-transition: transform 0.6s linear 0s, height 0s linear 0s;
+  transition: transform 0.6s linear 0s, height 0s linear 0s;
+  -o-transform: translateZ(0) translateX(-100%);
+  -moz-transform: translateZ(0) translateX(-100%);
+  -webkit-transform: translateZ(0) translateX(-100%);
+  -ms-transform: translateZ(0) translateX(-100%);
+  transform: translateZ(0) translateX(-100%);
+}
+.git-links a {
+	float: left;
+	margin-left: 0;
+  display: block;
+  line-height: 20px;
+  font-family: 'Gruppo', cursive;
+  font-size: 22px;
+  color: rgb(48, 15, 36);
+  text-decoration: none;
+}
+.left {
+	background: #A19996;
+	height:100%;
+	overflow: hidden;
+}
+#item2 .left .button p {
+	font-family: 'Gruppo', cursive;
+	font-size: 20px;
+	letter-spacing: 2px;
+	color: #A19996;
+}
+.left img {
+  height: auto;
+  width: 40%;
+	position: relative;
+	left: 30%;
+	margin-top: 20px;
+	border: #444442 solid 1px;
+}
+
+.button {
+  display: inline-block;
+  height: auto;
+  width: auto;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin: 5px;
+  -o-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -webkit-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+  background: #300F24;
+}
+
+.button:hover {
+	opacity: .3;
+
+}
+
+/* Hexagonal Grid */
+
+
+#grid {
+  width: 70%;
+	margin: 20% 0 0 30%;
+  padding: 20px 2%;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#grid li {
+  position: relative;
+  float: left;
+  width: 27.85714285714286%;
+  padding: 0 0 32.16760145166612% 0;
+  list-style-type: none;
+  -o-transform: rotate(-60deg) skewY(30deg);
+  -moz-transform: rotate(-60deg) skewY(30deg);
+  -webkit-transform: rotate(-60deg) skewY(30deg);
+  -ms-transform: rotate(-60deg) skewY(30deg);
+  transform: rotate(-60deg) skewY(30deg);
+  overflow: hidden;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+#grid li * {
+  visibility: visible;
+}
+
+#grid li .hexagon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -o-transform: skewY(-30deg) rotate(60deg);
+  -moz-transform: skewY(-30deg) rotate(60deg);
+  -webkit-transform: skewY(-30deg) rotate(60deg);
+  -ms-transform: skewY(-30deg) rotate(60deg);
+  transform: skewY(-30deg) rotate(60deg);
+  overflow: hidden;
+  background: #444442;
+	/*opacity: .5;*/
+}
+#grid li .hexagon-purple {
+	position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -o-transform: skewY(-30deg) rotate(60deg);
+  -moz-transform: skewY(-30deg) rotate(60deg);
+  -webkit-transform: skewY(-30deg) rotate(60deg);
+  -ms-transform: skewY(-30deg) rotate(60deg);
+  transform: skewY(-30deg) rotate(60deg);
+  overflow: hidden;
+	background: #300F24;
+}
+#grid li:nth-child(3n+2) {
+  margin: 0 1%;
+}
+
+#grid li:nth-child(6n+4), #grid li:nth-child(6n+5), #grid li:nth-child(6n+6) {
+  margin-top: -6.9285714285%;
+  margin-bottom: -6.9285714285%;
+}
+
+#grid li:nth-child(6n+1), #grid li:nth-child(6n+2), #grid li:nth-child(6n+3) {
+  -o-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+  -moz-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+  -webkit-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+  -ms-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+  transform: translateX(50%) rotate(-60deg) skewY(30deg);
+}
+
+#grid li:nth-child(6n+1) {
+  margin-left: 0.5%;
+}
+
+#grid li .hexagon-purple img {
+  left:-100%;
+  right:-100%;
+  height:100%;
+  width: auto;
+  margin: 0 auto;
+  -o-transition: all 0.6s linear 0s;
+  -moz-transition: all 0.6s linear 0s;
+  -ms-transition: all 0.6s linear 0s;
+  -webkit-transition: all 0.6s linear 0s;
+  transition: all 0.6s linear 0s;
+}
+
+#grid li:hover .hexagon-purple img {
+  height: 150%;
+  -o-transform: translateZ(0) translateX(-25%);
+  -moz-transform: translateZ(0) translateX(-25%);
+  -webkit-transform: translateZ(0) translateX(-25%);
+  -ms-transform: translateZ(0) translateX(-25%);
+  transform: translateZ(0) translateX(-25%);
+}
+
+#grid li .hexagon-purple .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgb(48, 15, 36);
+}
+
+#grid li:hover .overlay {
+  -o-transition: all 0.6s linear 0s;
+  -moz-transition: all 0.6s linear 0s;
+  -ms-transition: all 0.6s linear 0s;
+  -webkit-transition: all 0.6s linear 0s;
+  transition: all 0.6s linear 0s;
+	background: rgba(48, 15, 36, 0);
+}
+
+/**********************************/
+/* Text */
+
+
+ .name {
+	margin: 7px auto;
+	font-family: 'Gruppo', cursive;
+	color: #300F24;
+	font-size: 90px;
+	text-align: center;
+}
+.left h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+  text-align: center;
+  font-size: 28px;
+	color: #300F24;
+}
+
+.left p {
+  font-family: 'Gruppo', cursive;
+  padding: 0 10px;
+  font-size: 18px;
+	margin: auto 8px;
+	color: #300F24;
+}
+.left a {
+	font-family: 'Gruppo', cursive;
+	font-size: 26px;
+	color: #300F24;
+
+}
+#navlinks {
+  overflow: hidden;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+  background-color: #444442;
+}
+#navlinks a {
+  display: inline;
+  color: #A19996;
+  text-align: center;
+  padding-left: 28px;
+  text-decoration: none;
+	margin-left: 200px;
+
+}
+.content {
+  padding: 26px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+#navlinks a:hover {
+	color: #A19996;
+	opacity: 0.4;
+}
+
+/*********************************/
+#page2 {
+	height: 1000px;
+  background-color: #444442;
+}
+.heading-about {
+	font-family: 'Gruppo', cursive;
+	color: #A19996;
+	font-size: 65px;
+	letter-spacing: 3px;
+	text-align: center;
+	z-index: 3;
+  margin-top: 80px;
+}
+.container {
+    position: relative;
+		height: auto;
+		width: 100%;
+}
+img#portrait {
+	margin-top: -85px;
+	margin-left: -60px;
+	float: left;
+	width: 55%;
+	height: 55%;
+}
+
+/**************************
+page3
+**************************/
+#page3 {
+	background: #A19996;
+	height: 500px;
+}
+.heading-contact {
+	font-family: 'Gruppo', cursive;
+	color: #300F24;
+	font-size: 65px;
+	letter-spacing: 3px;
+	margin: auto 0;
+	text-align: center;
+}
+h2.contact-info {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 25px;
+	color: #300F24;
+	text-align: center;
+}
+.contact-links a {
+	text-align: center;
+	display: block;
+	line-height: 20px;
+	font-family: 'Gruppo', cursive;
+	font-size: 22px;
+	color: rgb(48, 15, 36);
+	text-decoration: none;
+}
+a.contact-links:hover {
+	color: rgba(48, 15, 36, .5);
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 1100px) {
+
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+
+  /* Grid */
+  #grid {
+    margin: 0 auto;
+    width: 95%;
+  }
+}
+
+
+@media only screen and (max-width: 550px) {
+  body {
+    font-size: 14px;
+  }
+}
