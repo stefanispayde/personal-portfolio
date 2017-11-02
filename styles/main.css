@@ -7,7 +7,6 @@ body {
 	position: absolute;
   height: 100%;
   width: 100%;
-  /*z-index: -1;*/
   overflow-x: hidden;
   overflow-y: auto;
   background-color: #A19996;
@@ -65,10 +64,17 @@ body {
 	float: left;
 	margin-left: 0;
   display: block;
-  line-height: 20px;
   font-family: 'Gruppo', cursive;
   font-size: 22px;
   color: rgb(48, 15, 36);
+  text-decoration: none;
+}
+.git-links a:active {
+  text-decoration: none;
+
+}
+.git-links a:hover {
+  opacity: 0.3;
   text-decoration: none;
 }
 .left {
@@ -238,7 +244,10 @@ body {
 
 /**********************************/
 /* Text */
+/**********************************/
+/*Styling for
 
+/*the H1 at top of page 1*/
 
  .name {
 	margin: 7px auto;
@@ -247,6 +256,8 @@ body {
 	font-size: 90px;
 	text-align: center;
 }
+
+/*heading for project title name on description page that slides over*/
 .left h2 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
@@ -255,6 +266,7 @@ body {
 	color: #300F24;
 }
 
+/*paragraph explaining project*/
 .left p {
   font-family: 'Gruppo', cursive;
   padding: 0 10px;
@@ -266,7 +278,6 @@ body {
 	font-family: 'Gruppo', cursive;
 	font-size: 26px;
 	color: #300F24;
-
 }
 #navlinks {
   overflow: hidden;
@@ -274,6 +285,7 @@ body {
 	font-weight: 400;
 	font-size: 20px;
   background-color: #444442;
+  z-index: 4;
 }
 #navlinks a {
   display: inline;
@@ -282,7 +294,6 @@ body {
   padding-left: 28px;
   text-decoration: none;
 	margin-left: 200px;
-
 }
 .content {
   padding: 26px;
@@ -305,6 +316,24 @@ body {
 	height: 1000px;
   background-color: #444442;
 }
+/*.box-design {
+  height: 800px;
+  background: #444442;
+  position: relative;
+}
+.box {
+  background: #444442;
+  position: absolute;
+}
+.box-1 {
+  top: -100px;
+  left: 10px;
+}
+.box-2 {
+  top: -45px;
+  left: 55px;
+  z-index: 3;
+}*/
 .heading-about {
 	font-family: 'Gruppo', cursive;
 	color: #A19996;
@@ -312,7 +341,8 @@ body {
 	letter-spacing: 3px;
 	text-align: center;
 	z-index: 3;
-  margin-top: 80px;
+  position: relative;
+  top: 13%;
 }
 .container {
     position: relative;
@@ -320,13 +350,42 @@ body {
 		width: 100%;
 }
 img#portrait {
-	margin-top: -85px;
-	margin-left: -60px;
+  position: relative;
+  top: 15%;
+	left: -9%;
 	float: left;
 	width: 55%;
 	height: 55%;
 }
+.about-blurb {
+  height: 200px;
+  width: 650px;
+  overflow: visible;
+  float: right;
+  /*border: 1px solid gray;*/
+  padding: 8px;
+  display: inline-block;
+  margin-top: -100px;
+}
+.about-blurb p {
+  font-family: 'Gruppo', cursive;
+	font-size: 18px;
+  color: #A19996;
+  word-spacing: 1px;
+  line-height: 25px;
+  text-indent: 50px;
+  text-align: justify;
+  /*position: relative;
+  top: 0;
+  right: 0;*/
 
+}
+#about-heading {
+  font-family: 'Gruppo', cursive;
+  font-size: 22px;
+  color: #A19996;
+  text-align: center;
+}
 /**************************
 page3
 **************************/
@@ -352,7 +411,7 @@ h2.contact-info {
 .contact-links a {
 	text-align: center;
 	display: block;
-	line-height: 20px;
+	line-height: 25px;
 	font-family: 'Gruppo', cursive;
 	font-size: 22px;
 	color: rgb(48, 15, 36);
