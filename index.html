@@ -6,11 +6,43 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Gruppo|Open+Sans:400,600" rel="stylesheet">
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script> -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  <link rel="stylesheet" type="text/css" href="styles/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="styles/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="styles/main.css">
 
 </head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      const hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('#leftbrain, #about, #sayhello, #top').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+
 	<body onscroll="myFunction()">
 
     <h1 class="name">STEFANI SPAYDE<span style="font-size:24px; display:block; text-align:center; margin-top:-23px; letter-spacing:3px; margin-left:10px">FULL STACK WEB DEVELOPER & GRAPHIC DESIGNER</span></h1>
@@ -22,6 +54,8 @@
 				<a href="#about">About</a>
 			</ul>
 		</div>
+
+		<a id="top" class="smooth"></a>
 
 		<div class="content">
 		<div id="page1">
@@ -162,29 +196,28 @@
 			 There were many challenges that I faced while building this app, but it helped me finally piece together the front and back end of web development. I kept the style simple, and kept my focus on completing the app's features and ensuring their accuracy.
 			 There are a few features I would like to add such as a way to categorize posts once they are sumbitted, either by week or topic. My work around for now is to provide the user with topic "tags" that they copy and paste in the beginning of their post.
 			 This way, other users can scan the page and click on the topics that interest them. This would make the whole app more organized and easier to use, thus bettering the user experience.
-
+			 Software/Languages/Frameworks used: <b>Node.js, Express, EJS, Mongoose, MongoDB, HTML, CSS, RESTful routing</b></br>
+			 <a class="git-links" href="https://github.com/stefanispayde/WDIR-project-2-full-stack-app">Look at my code</a>
 	   </p>
-	 </div>
-	 <div class="left">
-	  <img src="images/6.jpg"/>
+	  <img src="images/posts.png"/>
 	</div>
 	</div>
 	<div id="item7">
 	  <div class="left">
-	    <a href="#"><div class="button"><p>CLOSE &gt;&gt;</p></div></a>
+	    <!-- <a href="#"><div class="button"><p>CLOSE &gt;&gt;</p></div></a>
 	    <h2></h2>
 	    <p>
 	     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel molestie orci. Nulla egestas libero tellus, rhoncus facilisis nulla eleifend eget. Donec quis nunc sodales turpis gravida consectetur eu ut diam. Vestibulum ut ante justo. Nunc ac tincidunt turpis. Duis at massa consectetur, porta augue sed, elementum est. In hac habitasse platea dictumst. Duis sed sollicitudin risus. Donec fermentum laoreet odio. Nullam nec mi et mauris ultrices dictum. Vestibulum malesuada mattis ornare. Ut sit amet tellus nec neque tempus scelerisque. Etiam pretium felis et augue efficitur, eu pharetra sapien consequat. Aenean imperdiet ante mi, eget condimentum mauris imperdiet pulvinar. Mauris ut suscipit eros, sit amet congue erat. Fusce nec augue est.
-	   </p>
+	   </p> -->
 	 </div>
 	 <div class="left">
-	  <img src="images/7.jpg"/>
+	  <!-- <img src="images/7.jpg"/> -->
 	</div>
 	</div>
 	<div id="item8">
 	  <div class="left">
-	    <a href="#"><div class="button"><p>CLOSE &gt;&gt;</p></div></a>
-	    <h2>ITEM TITLE</h2>
+	    <a href="#"><div class="button"><p>CLOSE</p></div></a>
+	    <h2>Scattergories</h2>
 	    <p>
 	     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel molestie orci. Nulla egestas libero tellus, rhoncus facilisis nulla eleifend eget. Donec quis nunc sodales turpis gravida consectetur eu ut diam. Vestibulum ut ante justo. Nunc ac tincidunt turpis. Duis at massa consectetur, porta augue sed, elementum est. In hac habitasse platea dictumst. Duis sed sollicitudin risus. Donec fermentum laoreet odio. Nullam nec mi et mauris ultrices dictum. Vestibulum malesuada mattis ornare. Ut sit amet tellus nec neque tempus scelerisque. Etiam pretium felis et augue efficitur, eu pharetra sapien consequat. Aenean imperdiet ante mi, eget condimentum mauris imperdiet pulvinar. Mauris ut suscipit eros, sit amet congue erat. Fusce nec augue est.
 	   </p>
@@ -232,11 +265,13 @@
 			Here's where I hang out.</h2>
 
 			<div class="contact-links">
-			<a href="mailto:spayde.stefani@gmail.com">spayde.stefani@gmail.com</a>
-			<a href="https://www.linkedin.com/in/stefani-spayde/">linkedIn</a>
-			<a href="https://github.com/stefanispayde">gitHub</a>
-			<a href="https://www.behance.net/stefanispaydeortiz">Behance (graphic design examples)</a>
-		</div>
+				<a href="mailto:spayde.stefani@gmail.com">spayde.stefani@gmail.com</a>
+				<a href="https://www.linkedin.com/in/stefani-spayde/">linkedIn</a>
+				<a href="https://github.com/stefanispayde">gitHub</a>
+				<a href="https://www.behance.net/stefanispaydeortiz">Behance (graphic design examples)</a>
+			</div>
+
+			<a id="top" href="#top">Back To Top</a>
 
 	</div>
 </div>
@@ -253,6 +288,8 @@
 	  }
 	}
 	</script>
+
+	<!-- <script type="text/javascript" src="js/app.js"></script> -->
 
 </body>
 </html>

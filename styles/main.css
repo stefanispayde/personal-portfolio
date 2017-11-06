@@ -82,7 +82,13 @@ body {
 	height:100%;
 	overflow: hidden;
 }
-#item2 .left .button p {
+#item2 .left p {
+  font-family: 'Gruppo', cursive;
+	font-size: 20px;
+  line-height: 25px;
+  color: #300F24;
+}
+.left .button  {
 	font-family: 'Gruppo', cursive;
 	font-size: 20px;
 	letter-spacing: 2px;
@@ -93,7 +99,7 @@ body {
   width: 40%;
 	position: relative;
 	left: 30%;
-	margin-top: 20px;
+  bottom: 20%;
 	border: #444442 solid 1px;
 }
 
@@ -123,6 +129,7 @@ body {
   bottom: 15%;
   left:0;
   z-index: 0;
+  opacity: .8;
 }
 #box2 {
   background: #444442;
@@ -132,6 +139,7 @@ body {
   bottom: 52%;
   left: 0;
   z-index: 1;
+  opacity: .6;
 }
 
 /* Hexagonal Grid */
@@ -281,6 +289,7 @@ body {
   text-align: center;
   font-size: 28px;
 	color: #300F24;
+  margin-top: auto;
 }
 
 /*paragraph explaining project*/
@@ -302,7 +311,7 @@ body {
 	font-weight: 400;
 	font-size: 20px;
   background-color: #444442;
-  z-index: 4;
+  z-index: 5;
 }
 #navlinks a {
   display: inline;
@@ -311,6 +320,14 @@ body {
   padding-left: 28px;
   text-decoration: none;
 	margin-left: 200px;
+}
+#top a {
+  font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 0px;
+  text-align: center;
+  text-decoration: none;
+
 }
 .content {
   padding: 26px;

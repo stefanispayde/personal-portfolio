@@ -1,15 +1,12 @@
-// Get the navbar
-const navlinks = document.getElementById("navlinks");
-
-// Get the offset position of the navbar
-const sticky = navlinks.offsetTop;
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navlinks.classList.add("sticky")
-  } else {
-    navlinks.classList.remove("sticky");
-  }
-}
-myFunction();
+// <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+// <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+// <script>
+// $('.smooth').on('click', function() {
+//     $.smoothScroll({
+//         scrollElement: $('body'),
+//         scrollTarget: '#' + this.id
+//     });
+//
+//     return false;
+// });
+// </script>
