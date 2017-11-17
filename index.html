@@ -14,7 +14,7 @@
 
 </head>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -32,7 +32,7 @@ $(document).ready(function(){
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('#leftbrain, #about, #sayhello, #top').animate({
         scrollTop: $(hash).offset().top
-      }, 800, function(){
+      }, 600, function(){
 
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
@@ -40,26 +40,39 @@ $(document).ready(function(){
     } // End if
   });
 });
+</script> -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+<script>
+$('.smooth').on('click', function() {
+    $.smoothScroll({
+        scrollElement: $('body'),
+        scrollTarget: '#' + this.id
+    });
+
+    return false;
+});
 </script>
 
-
 	<body onscroll="myFunction()">
+		<a id="top" class="smooth"></a>
 
     <h1 class="name">STEFANI SPAYDE<span style="font-size:24px; display:block; text-align:center; margin-top:-23px; letter-spacing:3px; margin-left:10px">FULL STACK WEB DEVELOPER & GRAPHIC DESIGNER</span></h1>
 
+			<!-- <a id="top" class="smooth"></a> -->
+
 		<div id="navlinks">
 			<ul>
-			  <a href="#leftbrain">My Left Brain</a>
-			  <a href="#sayhello"><span style="padding-left:-20px">Say Hello</span></a>
-				<a href="#about">About</a>
+			  <a href="#leftbrain">{ My Left Brain }</a>
+			  <a href="#sayhello"><span style="padding-left:-20px">{ Say Hello }</span></a>
+				<a href="#about">{ About }</a>
 			</ul>
 		</div>
 
-		<a id="top" class="smooth"></a>
-
+<a id="leftbrain" class="smooth"></a>
 		<div class="content">
 		<div id="page1">
-			<a id="leftbrain" class="smooth"></a>
 		<h1 id="heading-work">WORK</h1>
 
 	  <ul id="grid" class="clr">
@@ -142,15 +155,15 @@ $(document).ready(function(){
 
 	<div id="item2">
 	  <div class="left">
-	    <a href="#"><div class="button"><p>CLOSE</p></div></a>
+	    <a href="#"><div class="button"><h3>CLOSE</h3></div></a>
 	    <h2>TIC TAC TOE</h2>
 	    <p>
-				This was the very first program I ever built completely by myself using jQuery/Javascript. I was so proud to have the pieces come together, by writing functions that handled the componets necessary for the game's functionality. With several projects now under my belt, I know that
-				that much of this code is redundnt, and there are easier ways of writing a few of these functions. However as a fledgling developer, I was so excited just to have them work, and execute all the requirements and goals that were set! This is also why I lhave left it as is, without combing through
-				and rewriting the original code. I like to be reminded of where I started to where I am now. Humbling and inspiring.
-	      Software/Languages/Frameworks used: <b>HTML5, CSS3, jQuery, Javascript</b></br>
+				A throwback to one of everyone's favorite childhood games, this online version of Tic Tac Toe was the very first program I ever built completely by myself using jQuery/Javascript.</br>
+	      Software/Languages/Frameworks used: <b>HTML5, CSS3, jQuery, Javascript</b></br></br>
 				<a class="git-links" href="https://github.com/stefanispayde/wdi-remote-gizmo/tree/master/unit_1/tic-tac-toe">Look at my code</a>
 	   </p>
+	 </div>
+		 <div class="right">
 	  <img src="images/tictactoe.png"/>
 	</div>
 	</div>
@@ -162,18 +175,19 @@ $(document).ready(function(){
 
 	<div id="item4">
 	  <div class="left">
-	    <a href="#"><div class="button"><p>CLOSE &gt;&gt;</p></div></a>
+	    <a href="#"><div class="button"><h3>CLOSE</h3></div></a>
 	    <h2>PET-FINDER</h2>
 	    <p>
-	     	This app was originally a group project, in which I collaborated with 2 other developers. It is a full MEAN stack utilizing API from Pet-Finder, an organization that has a database of all the adoptable domestic animals in the US, and the shelters that house them. We loved the idea of being able to search by zipcode,
-				include filters to narrow your search, and find the perfect pet for the user and their family. There were many challenges that arose both technically and logistically, but in the short time we had, we built an app that produces correct and up to date information on animals needing a home. Features include two different ways to search; the
-				first allows the user to choose the zipcode of the area they want to search, type of animal, breed, and gender from a dropdown menu. The second option is where the user can put in a zipcode and view all the shelters affiliated with Pet-Finder, along with their contact informtion. Another feature within the app enables the user to create a wishlist
-				of the animals they are interested in getting more information on to save and view at any time. This requires the user to register and create a user name and password. Once they do, they can view their wishlist, as well as add or delete animals up for adoption. Building this not only allowed me to hone in on new programming skills, but was also a
-				chance to work with other developers remotely, and work as a team. I have taken the liberty of reorganizing some of the pages functions and RESTful routes, as well as embellishing on the existing styling. It is a project I am proud of, and continue to work on, as I learn new skills.
-				Software/Languages/Frameworks used: <b>MongoDB, Express.js, Node.js, EJS, HTML, CSS, Sessions, Angular.js, RESTful routing</b></br>
+	     	This is a full MEAN stack utilizing API from Pet-Finder, an organization that has a database of all the adoptable domestic animals in the US, and the shelters that house them.
+			 	Features include two different ways to search; the first allows the user to choose the zipcode of the area they want to search, type of animal, breed, and gender from a dropdown menu. The second option is where the user can put in a zipcode and view all the shelters affiliated with Pet-Finder, along with their contact informtion.
+				Another feature within the app enables the user to create a wishlist of the animals they are interested in getting more information on to save and view at any time.
+				Software/Languages/Frameworks used: <b>MongoDB, Express.js, Node.js, EJS, HTML, CSS, Sessions, Angular.js, RESTful routing</b></br></br>
 				<a class="git-links" href="https://github.com/stefanispayde/Pet-Findr/blob/master/README.md">Look at my code</a>
 	   </p>
+	 </div>
+	 <div class="right">
 	  <img src="images/petfindr.png"/>
+	</div>
 	</div>
 	</div>
 
@@ -219,20 +233,20 @@ $(document).ready(function(){
 	    <a href="#"><div class="button"><p>CLOSE</p></div></a>
 	    <h2>Scattergories</h2>
 	    <p>
-	     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel molestie orci. Nulla egestas libero tellus, rhoncus facilisis nulla eleifend eget. Donec quis nunc sodales turpis gravida consectetur eu ut diam. Vestibulum ut ante justo. Nunc ac tincidunt turpis. Duis at massa consectetur, porta augue sed, elementum est. In hac habitasse platea dictumst. Duis sed sollicitudin risus. Donec fermentum laoreet odio. Nullam nec mi et mauris ultrices dictum. Vestibulum malesuada mattis ornare. Ut sit amet tellus nec neque tempus scelerisque. Etiam pretium felis et augue efficitur, eu pharetra sapien consequat. Aenean imperdiet ante mi, eget condimentum mauris imperdiet pulvinar. Mauris ut suscipit eros, sit amet congue erat. Fusce nec augue est.
 	   </p>
 	 </div>
 	 <div class="left">
 	  <img src="images/8.jpg"/>
 	</div>
 	</div>
-	<div id="box"></div>
-	<div id="box2"></div>
+	<!-- <div id="box"></div>
+	<div id="box2"></div> -->
 </div>
 
-	<div id="page2">
-		<a id="about" class="smooth"></a>
 
+<a id="about" class="smooth"></a>
+
+	<div id="page2">
 
 		<h1 class="heading-about">ABOUT</h1>
 
@@ -242,14 +256,17 @@ $(document).ready(function(){
 
 		<div class="about-blurb">
 			<h1 id="about-heading"><b>Art & coffee conneissor, code enthusiast, and all around misfit</b></h1>
-			<p>Hello! I'm Stefani, a full stack web developer and graphic designer here in Austin, TX.
-				After many years as a designer, my obsession with learning to code found me back at school flexing my
-				brain's left side. It was my dream to have a career that intertwined logic with creative expression, and
-				allowed me to incorporate my design experience with the technical problem solving found in building applications.
+			<p>Hello! I'm Stefani, a passionate and driven full stack web developer and graphic designer here in Austin, TX.
+				I’m obsessed with design, and then turning that design into something real, something with a purpose. I don’t agree
+				that people are either right brained or left brained, destined to be artistic and subjective or analytical and objective.
+				I consider myself a combination of the two, intertwining logic with creative expression. Both a graphic designer AND code
+				enthusiast, I am able to utilize my knowledge with design principles to dream up a beautiful application, and then use my
+				skills as a programmer to build and connect the pieces. Being a new developer, my curiosity and hunger keep me constantly
+				learning new skills or honing the ones I currently have. The ability to understand and love both parts of the development
+				process is a powerful asset to me, my clients, and coworkers.</p>
 
-				I stay curious, and am always trying to learn new skills, or further hone the ones I currently have. Understanding
-				the aspects and principles of design, is a strength i am proud of because it allows me to blah blah blah blah blah
-				</p>
+				<p>I love to explore new foods, share a private joke, laugh until my cheeks hurt, listen to music that moves me, and beat you at Scattergories.
+				You can usually find me over my laptop, headphones on, completely immersed in the world of web development and design.</p>
 		</div>
 
  	</div>
@@ -271,7 +288,11 @@ $(document).ready(function(){
 				<a href="https://www.behance.net/stefanispaydeortiz">Behance (graphic design examples)</a>
 			</div>
 
-			<a id="top" href="#top">Back To Top</a>
+			<a id="top" href="#top">{ Back To Top }</a>
+
+			<!-- <div class="footer">
+			   <p>Footer</p>
+			</div>  -->
 
 	</div>
 </div>
@@ -289,7 +310,7 @@ $(document).ready(function(){
 	}
 	</script>
 
-	<!-- <script type="text/javascript" src="js/app.js"></script> -->
+	<script type="text/javascript" src="js/app.js"></script>
 
 </body>
 </html>
