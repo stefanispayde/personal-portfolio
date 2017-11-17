@@ -60,11 +60,12 @@ body {
   -ms-transform: translateZ(0) translateX(-100%);
   transform: translateZ(0) translateX(-100%);
 }
-a.git-links  {
+.git-links a {
 	float: left;
 	margin-left: 0;
   display: block;
-  font-family: 'Gruppo', cursive;
+  font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
   font-size: 22px;
   color: rgb(48, 15, 36);
   text-decoration: none;
@@ -432,6 +433,7 @@ img#portrait {
   position: relative;
   top: -60%;
   right; 9%;
+  z-index: 5;
 }
 .about-blurb p {
   font-family: 'Gruppo', cursive;
