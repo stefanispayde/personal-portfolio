@@ -96,25 +96,6 @@ a.git-links :hover {
   width: 90%;
   margin: 15% auto;
 }
-
-/*.button {
-  display: inline-block;
-  height: auto;
-  width: auto;
-  padding: 5px 10px;
-  border-radius: 10px;
-  margin: 5px;
-  -o-transition: all 0.3s linear 0s;
-  -moz-transition: all 0.3s linear 0s;
-  -ms-transition: all 0.3s linear 0s;
-  -webkit-transition: all 0.3s linear 0s;
-  transition: all 0.3s linear 0s;
-  background: #8b8989;
-}
-
-.button:hover {
-	opacity: .3;
-}*/
 .button {
   display: inline-block;
   height: auto;
@@ -141,26 +122,6 @@ a.git-links :hover {
 	letter-spacing: 2px;
 	color: #fffafa;
 }
-/*#box {
-  background: #444442;
-  height: 300px;
-  width: 275px;
-  position: relative;
-  bottom: 15%;
-  left:0;
-  z-index: 0;
-  opacity: .7;
-}
-#box2 {
-  background: #444442;
-  height: 150px;
-  width: 425px;
-  position: relative;
-  bottom: 40%;
-  left: 0;
-  z-index: 1;
-  opacity: .4;
-}*/
 
 /* Hexagonal Grid */
 
@@ -210,8 +171,8 @@ a.git-links :hover {
   transform: skewY(-30deg) rotate(60deg);
   overflow: hidden;
   background: #8b8989;
-	/*opacity: .5;*/
 }
+
 #grid li .hexagon-purple {
 	position: absolute;
   top: 0;
@@ -286,6 +247,18 @@ a.git-links :hover {
   transition: all 0.6s linear 0s;
 	background: rgba(48, 15, 36, 0);
 }
+#grid li .hexagon-purple .overlay p {
+  font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+  color: #fffafa;
+  font-size: 16px;
+  z-index: 5;
+  text-align: center;
+  margin: 35px auto;
+}
+#grid li .hexagon-purple .overlay p :hover {
+  opacity: .1;
+}
 
 /**********************************/
 /* Text */
@@ -302,7 +275,7 @@ a.git-links :hover {
 	text-align: center;
 }
 
-/*heading for project title name on description page that slides over*/
+/*heading for project title name on description of sliding page*/
 .left h2 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
@@ -325,6 +298,8 @@ a.git-links :hover {
 	font-size: 26px;
 	color: #444442;
 }
+
+/*links for sticky nav*/
 #navlinks {
   overflow: hidden;
 	font-family: 'Open Sans', sans-serif;
@@ -349,8 +324,6 @@ a#top  {
   text-decoration: none;
   color: #8b8989;
   position: relative;
-  /*margin-bottom: -25px;
-  left: 42%;*/
   left: 45%;
   bottom: 0;
 }
@@ -371,6 +344,7 @@ a#top  {
 }
 
 /*********************************/
+/*about section*/
 #page2 {
 	height: 1000px;
   background-color: #444442;
@@ -437,6 +411,7 @@ a.resume {
 /**************************
 page3
 **************************/
+/*contact page*/
 #page3 {
 	background: #fffafa;
 	height: 500px;
@@ -476,8 +451,17 @@ a.contact-links:hover {
 	color: #034f84;
 }
 
-
 /* Media Queries */
+
+@media only screen and (max-width: 550px) {
+  /* Layout */
+  body {
+    font-size: 14px;
+  }
+
+
+
+
 
 @media only screen and (max-width: 1100px) {
 
