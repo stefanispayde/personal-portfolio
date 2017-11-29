@@ -2,7 +2,7 @@
   "name": "personal-portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "web.js",
+  "main": "node server.js",
   "dependencies": {
     "normalize.css": "^7.0.0"
   },
