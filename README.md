@@ -1,4 +1,3 @@
-My apologies! My site is under maitenance and I will have it back up in the next couple of days!
 
 Here is my collection of the few full stack apps I have built, along with a couple of my favorite games I made online versions of. 
 Choosing how I wanted my personal portfolio to look was difficult. This overall design was going to show viewers who I was as a designer 
