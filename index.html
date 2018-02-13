@@ -6,69 +6,33 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Gruppo|Open+Sans:400,600" rel="stylesheet">
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  <link rel="stylesheet" type="text/css" href="styles/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="styles/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="styles/main.css">
 
 </head>
 
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
 
-      // Store hash
-      const hash = this.hash;
+	<body onscroll="function(e)">
+		<a id="top"></a>
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('#leftbrain, #about, #sayhello, #top').animate({
-        scrollTop: $(hash).offset().top
-      }, 600, function(){
+    <h1 class="name">STEFANI SPAYDE<span style="font-size:24px; display:block; text-align:center; margin-top:-15px; letter-spacing:3px; margin-left:10px">FULL STACK WEB DEVELOPER & GRAPHIC DESIGNER</span></h1>
 
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script> -->
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
-<script>
-$('.smooth').on('click', function() {
-    $.smoothScroll({
-        scrollElement: $('body'),
-        scrollTarget: '#' + this.id
-    });
-
-    return false;
-});
-</script>
-
-	<body onscroll="myFunction()">
-		<a id="top" class="smooth"></a>
-
-    <h1 class="name">STEFANI SPAYDE<span style="font-size:24px; display:block; text-align:center; margin-top:-23px; letter-spacing:3px; margin-left:10px">FULL STACK WEB DEVELOPER & GRAPHIC DESIGNER</span></h1>
 
 		<div id="navlinks">
 			<ul>
 			  <a href="#leftbrain">{ My Left Brain }</a>
-			  <a href="#sayhello"><span style="padding-left:-20px">{ Say Hello }</span></a>
+				<a href="#sayhello">{ Say Hello }</a>
 				<a href="#about">{ About }</a>
+				<a href="#top">{ Top }</a>
 			</ul>
 		</div>
 
-<a id="leftbrain" class="smooth"></a>
+		<a id="leftbrain"></a>
+
 		<div class="content">
 		<div id="page1">
 		<h1 id="heading-work">WORK</h1>
@@ -151,7 +115,7 @@ $('.smooth').on('click', function() {
 
 	<div id="item2">
 	  <div class="left">
-	    <a href="#"><div class="button"><h3>CLOSE</h3></div></a>
+	    <a href="#top"><div class="button"><h3>CLOSE</h3></div></a>
 	    <h2>TIC TAC TOE</h2>
 	    <p>
 				A throwback to one of everyone's favorite childhood games, this online version of Tic Tac Toe was the very first program I ever built completely by myself using jQuery/Javascript.</br>
@@ -172,7 +136,7 @@ $('.smooth').on('click', function() {
 
 	<div id="item4">
 	  <div class="left">
-	    <a href="#"><div class="button"><h3>CLOSE</h3></div></a>
+	    <a href="#top"><div class="button"><h3>CLOSE</h3></div></a>
 	    <h2>PET-FINDER</h2>
 	    <p>
 	     	This is a full MEAN stack utilizing API from Pet-Finder, an organization that has a database of all the adoptable domestic animals in the US, and the shelters that house them.
@@ -197,7 +161,7 @@ $('.smooth').on('click', function() {
 
 	<div id="item6">
 	  <div class="left">
-	    <a href="#"><div class="button"><h3>CLOSE</h3></div></a>
+	    <a href="#top"><div class="button"><h3>CLOSE</h3></div></a>
 	    <h2>Just The Tip</h2>
 	    <p>
 	     An adult advice forum, this app is full CRUD and follows the Rest architectural style, allowing users to submit posts in which they can edit and delete.
@@ -219,7 +183,7 @@ $('.smooth').on('click', function() {
 
 	<div id="item8">
 	  <div class="left">
-	    <a href="#"><div class="button"><h3>CLOSE</h3></div></a>
+	    <a href="#top"><div class="button"><h3>CLOSE</h3></div></a>
 	    <h2>Scattergories</h2>
 	    <p>
 				This is, hands down, my favorite game, so it is no surprise that I had to create an online version. This was built as I was learning jQuery, and becoming more deft at Javascript. In order
@@ -235,7 +199,7 @@ $('.smooth').on('click', function() {
 </div>
 
 
-<a id="about" class="smooth"></a>
+<a id="about"></a>
 
 	<div id="page2">
 
@@ -263,13 +227,12 @@ $('.smooth').on('click', function() {
 			<a class="resume" href="https://docs.google.com/document/d/1nGEJYuPZ_D_4PFt_CYlUhB2sonPw2gLjfgnuAOLa-yY/edit?usp=sharing">{ resume }</a>
 
 		</div>
-
  	</div>
 
 
 
 		<div id="page3">
-			<a id="sayhello" class="smooth"></a>
+			<a id="sayhello"></a>
 
 			<h1 class="heading-contact">CONTACT ME</h1>
 
@@ -285,24 +248,9 @@ $('.smooth').on('click', function() {
 
 			<a id="top" href="#top">{ Back To Top }</a>
 
-
 	</div>
 </div>
-	<script>
-	const navlinks = document.getElementById("navlinks");
 
-	const sticky = navlinks.offsetTop;
-
-	function myFunction() {
-	  if (window.pageYOffset >= sticky) {
-	    navlinks.classList.add("sticky")
-	  } else {
-	    navlinks.classList.remove("sticky");
-	  }
-	}
-	</script>
-
-	<script type="text/javascript" src="js/app.js"></script>
 
 </body>
 </html>
