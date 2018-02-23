@@ -394,13 +394,13 @@ img#portrait {
 
 #navlinks ul {
     list-style-type: none;
-    margin-top: 35px;
+    margin-top: 75px;
 		margin-left: -15px;
     padding: 0;
     width: 15%;
 		background-color: #cdc9c9;
     position: fixed;
-    height: 75%;
+    height: 55%;
     overflow: hidden;
 		z-index: 5;
 		opacity: 0.5;
