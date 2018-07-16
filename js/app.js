@@ -10,7 +10,7 @@ var jump=function(e)
                //get top-position of target-element and set it as scroll target
                scrollTop: $(target).offset().top
        //scrolldelay: 2 seconds
-     },900,function()
+     },800,function()
        {
                //attach the hash (#jumptarget) to the pageurl
                location.hash = target;

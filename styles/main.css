@@ -320,7 +320,7 @@ a.git-links :hover {
 
 a#top  {
   font-family: 'Open Sans', sans-serif;
-	font-weight: 600;
+	font-weight: 400;
 	font-size: 20px;
   text-align: center;
   text-decoration: none;
@@ -330,7 +330,7 @@ a#top  {
   bottom: 0;
 }
 
-a#top a:hover {
+a#top :hover {
 	opacity: 0.3;
 }
 
@@ -490,26 +490,25 @@ h2.contact-info {
 
 /* Media Queries */
 
-@media only screen and (max-width: 550px) {
-  /* Layout */
-  body {
-    font-size: 14px;
 
-  }
-
-	#heading-work {
-		width: 100%;
-	}
-
-	.about-blurb p {
-		font-size: 10px;
-	}
-}
 
 @media only screen and (max-width: 1100px) {
 
   }
 
+
+
+@media only screen and (max-width: 940px) {
+	h1#heading-work, h1.heading-about, h1.heading-contact {
+		display: none !important;
+		visibility: hidden;
+	}
+}
+
+@media only screen and (max-width: 822px) {
+	h1.name {
+		font-size: 70px;
+	}
 }
 
 @media only screen and (max-width: 768px) {
@@ -520,10 +519,16 @@ h2.contact-info {
     width: 95%;
   }
 
-	h1#heading-work {
-		visibility: hidden;
-		display: none;
-}
+	h1.name {
+		font-size: 60px;
+	}
+
+	#navlinks a {
+		font-size: 18px;
+		line-height: 14px;
+		text-align: center;
+		margin:10px 2px;
+	}
 
 	.about-blurb p#one {
 		font-size: 12px;
@@ -545,6 +550,29 @@ h2.contact-info {
 	}
 }
 
+media only screen and (max-width: 550px) {
+  /* Layout */
+  body {
+    font-size: 14px;
+
+  }
+
+	#grid li .hexagon-purple .overlay p {
+		font-size: 10px;
+	}
+
+	h1.name {
+		font-size: 50px;
+	}
+
+	h2.role {
+		font-size: 20px;
+	}
+
+	.about-blurb p {
+		font-size: 10px;
+	}
+}
 
 @media only screen and (max-width: 320px) {
 
@@ -553,17 +581,13 @@ h2.contact-info {
 	}
 
 	#page1, #page2, #page3 {
-		height: 250px;
+		height: 300px;
 	}
 
 	#grid {
     margin: 10px 0 0 60px;
     width: 95%;
   }
-
-	h1#heading-work, h1.heading-about, h1.heading-contact {
-		display: none;
-	}
 
 	.name {
 		font-size: 30px;
@@ -575,7 +599,7 @@ h2.contact-info {
 		}
 
 	.role {
-		font-size: 8px;
+		font-size: 10px;
 		padding-top: 5px;
 		margin-right: 30px;
 	}
@@ -613,7 +637,7 @@ h2.contact-info {
 	}
 
 	#page1, #page2, #page3 {
-		height: 300px;
+		height: 250px;
 	}
 
 	#navlinks ul {
@@ -646,9 +670,9 @@ h2.contact-info {
 	.contact-links a {
 		font-size: 10px;
 		line-height: 14px;
-}
+	}
 	a#top {
 		font-size: 10px;
 		margin: 0 auto;
-}
+	}
 }
