@@ -3,6 +3,7 @@
 #page1 {
 	height: 1000px;
 }
+
 body {
 	position: absolute;
   height: 100%;
@@ -13,15 +14,16 @@ body {
 	border: #fffafa	solid 15px;
   font-size: 16px;
 }
+
 #heading-work  {
-		font-family: 'Gruppo', cursive;
-		color: #444442;
-		font-size: 75px;
-		letter-spacing: 2px;
-		position: absolute;
-		right: 60%;
-		/* top: 55%; */
+	font-family: 'Gruppo', cursive;
+	color: #444442;
+	font-size: 75px;
+	letter-spacing: 2px;
+	position: absolute;
+	right: 60%;
 }
+
 .clr:after {
   content: "";
   display: block;
@@ -60,6 +62,7 @@ body {
   -ms-transform: translateZ(0) translateX(-100%);
   transform: translateZ(0) translateX(-100%);
 }
+
 a.git-links {
 	margin-left: 0;
   display: inline-block;
@@ -69,6 +72,7 @@ a.git-links {
   color: #444442;
   text-decoration: none;
 }
+
 a.git-links :active {
   text-decoration: none;
 
@@ -77,6 +81,7 @@ a.git-links :hover {
   opacity: 0.3;
   text-decoration: none;
 }
+
 .left, .right {
   position: absolute;
   left: 0;
@@ -96,6 +101,7 @@ a.git-links :hover {
   width: 90%;
   margin: 15% auto;
 }
+
 .button {
   display: inline-block;
   height: auto;
@@ -115,6 +121,7 @@ a.git-links :hover {
   background: #444442;
   opacity: .4;
 }
+
 .button h3, input[type="submit"].button {
   margin: 0;
   font-family: 'Gruppo', cursive;
@@ -187,6 +194,7 @@ a.git-links :hover {
   overflow: hidden;
 	background: #cdc9c9;
 }
+
 #grid li:nth-child(3n+2) {
   margin: 0 1%;
 }
@@ -309,6 +317,7 @@ a.git-links :hover {
 	font-size: 26px;
 	color: #444442;
 }
+
 a#top  {
   font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
@@ -320,16 +329,19 @@ a#top  {
   left: 45%;
   bottom: 0;
 }
+
 a#top a:hover {
 	opacity: 0.3;
 }
 
 /*********************************/
 /*about section*/
+
 #page2 {
 	height: 1000px;
   background-color: #444442;
 }
+
 .heading-about {
 	font-family: 'Gruppo', cursive;
 	color: #cdc9c9;
@@ -340,6 +352,7 @@ a#top a:hover {
   top: 4%;
   left: 55%;
 }
+
 .container {
     position: relative;
 		height: auto;
@@ -348,6 +361,7 @@ a#top a:hover {
     top: -10%;
     z-index: 4;
 }
+
 img#portrait {
 	float: left;
 	width: 55%;
@@ -357,6 +371,7 @@ img#portrait {
 	margin-left: 0;
 	margin-top: -2%;
 }
+
 .about-blurb {
   height: 600px;
   width: 730px;
@@ -368,6 +383,7 @@ img#portrait {
   right; 9%;
   z-index: 5;
 }
+
 .about-blurb p {
   font-family: 'Gruppo', cursive;
 	font-size: 18px;
@@ -378,6 +394,7 @@ img#portrait {
   margin-right: 25px;
   clear: left;
 }
+
 #about-heading {
   font-family: 'Gruppo', cursive;
   font-size: 24px;
@@ -386,6 +403,7 @@ img#portrait {
   margin-top: 10px;
   margin-right: 30px;
 }
+
 #navlinks a {
   display: block;
 	font-family: 'Gruppo', cursive;
@@ -399,6 +417,7 @@ img#portrait {
 	margin-top: 30px;
 	line-height: 30px;
 }
+
 #navlinks a:hover {
 	opacity: 0.3;
 }
@@ -416,6 +435,7 @@ img#portrait {
 		z-index: 5;
 		opacity: 0.5;
 }
+
 a.resume {
   font-family: 'Gruppo', cursive;
 	font-size: 22px;
@@ -426,10 +446,12 @@ a.resume {
 page3
 **************************/
 /*contact page*/
+
 #page3 {
 	background: #fffafa;
 	height: 1000px;
 }
+
 h1.heading-contact {
 	font-family: 'Gruppo', cursive;
 	color: #444442;
@@ -461,6 +483,7 @@ h2.contact-info {
   position: relative;
   left: 30%;
 }
+
 .contact-links a:hover {
 	opacity: 0.3;
 }
@@ -473,9 +496,11 @@ h2.contact-info {
     font-size: 14px;
 
   }
+
 	#heading-work {
 		width: 100%;
 	}
+
 	.about-blurb p {
 		font-size: 10px;
 	}
@@ -490,17 +515,32 @@ h2.contact-info {
 @media only screen and (max-width: 768px) {
 
   /* Grid */
-  #grid {
-    margin: 0 auto;
+  ul#gridclr {
+    margin: -25px auto;
     width: 95%;
   }
-	body {
-		width:
-	}
+
 	h1#heading-work {
-		width: 100%;	
+		visibility: hidden;
+		display: none;
 }
-	.about-blurb p {
+
+	.about-blurb p#one {
+		font-size: 12px;
+	}
+
+	.about-blurb p#two {
+		font-size: 12px;
+
+	}
+	img.right {
+		max-width:100%;
+		height: auto;
+	}
+	a.git-links {
+		font: 12px;
+	}
+	.left p {
 		font-size: 10px;
 	}
 }
@@ -509,79 +549,106 @@ h2.contact-info {
 @media only screen and (max-width: 320px) {
 
 	body {
-		width: 75%;
+		width: 70%;
 	}
+
 	#page1, #page2, #page3 {
-		height: 300px;
+		height: 250px;
 	}
+
+	#grid {
+    margin: 10px 0 0 60px;
+    width: 95%;
+  }
+
 	h1#heading-work, h1.heading-about, h1.heading-contact {
 		display: none;
 	}
 
 	.name {
-		font-size: 20px;
+		font-size: 30px;
 		padding: 0px 50px 15px;
 		text-align: center;
-		margin-right: 10px;
-	}
+		margin-left: 0 auto;
+		position: relative;
+		right: 30%s;
+		}
+
 	.role {
 		font-size: 8px;
 		padding-top: 5px;
 		margin-right: 30px;
 	}
+
 	#navlinks a {
-		display: block;
-		font-family: 'Gruppo', cursive;
-		font-size: 10px;
-		font-weight: 600;
-	  color: #444442;
+		font-size: 8px;
+		line-height: 14px;
+		text-align: center;
+		margin:10px 2px;
 	}
-		.about-blurb {
+
+	.about-blurb {
 		  height: 150px;
 		  width: 100%;
-		  overflow: visible;
-		  float: right;
 	}
+
 	h1#about-blurb, b  {
-		/* font-family: 'Gruppo', cursive;
-		font-size: 12px;
-		margin: 30px 10px; */
 		display: none;
 	}
-	.about-blurb p {
-	  font-family: 'Gruppo', cursive;
+
+	.about-blurb p#one {
 		font-size: 10px;
-	  color: #cdc9c9;
-	  line-height: 10px;
-	  text-indent: 10px;
-		clear: left;
-		margin: 40px 0;
-		/* display: none; */
+	  line-height: 9px;
+		margin: 50% 0;
+		text-indent: 10px;
+		position: relative;
 	}
+
+	.about-blurb p#two {
+		font-size: 10px;
+	  line-height: 9px;
+		position: relative;
+		bottom: 55px;
+		text-indent: 10px;
+	}
+
 	#page1, #page2, #page3 {
 		height: 300px;
 	}
+
 	#navlinks ul {
-		list-style-type: none;
     width: 15%;
-		background-color: #cdc9c9;
-    position: fixed;
-    height: 35%;
-    overflow: hidden;
-		z-index: 5;
-		opacity: 0.5;
+    height: 25%;
 	}
+
+	#grid li .hexagon-purple .overlay p {
+		font-size: 8px;
+	}
+
 	img#portrait {
 		display: none;
 	}
+
 	a.resume {
-		font-family: 'Gruppo', cursive;
 		font-size: 14px;
-		color: #444442;
-		text-decoration: none;
 	}
+
 	#page2 {
 		background-color: #fffafa;
 
 	}
+	h2.contact-info {
+		font-size: 10px;
+		margin: 0 auto;
+		/* text-align: center; */
+	}
+
+	.contact-links a {
+		font-size: 10px;
+		line-height: 14px;
+}
+	a#top {
+		font-size: 10px;
+		margin: 0 auto;
+}
 }
